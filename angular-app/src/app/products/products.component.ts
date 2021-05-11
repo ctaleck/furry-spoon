@@ -8,12 +8,12 @@ import { ProductService } from './product.service';
   template: `
     <div class="content-container">
       <app-list-header
-        title="Products"
+        title="Legacy App"
         (refresh)="getProducts()"
       ></app-list-header>
       <div class="columns is-multiline is-variable">
         <div class="column is-8" *ngIf="products$ | async as products">
-          <app-product-list [products]="products"></app-product-list>
+          <p>Legacy information page.</p>
         </div>
       </div>
     </div>
